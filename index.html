@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PLP Week 7 Assignment - JS Fundamentals & Animations</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1> PLP Week 7 Assignment</h1>
+        <p class="subtitle">JavaScript Scope, Parameters, Return Values & Animations</p>
+
+        <!-- ========== SECTION 1: SCOPE DEMONSTRATION ========== -->
+        <div class="section">
+            <h2>1. Variable Scope Demonstration</h2>
+            <div class="section-description">
+                📚 This section demonstrates the difference between GLOBAL and LOCAL scope.
+                Global variables can be accessed anywhere, while local variables only exist inside functions.
+            </div>
+            
+            <button class="btn" onclick="demonstrateScope()">Show Scope Example</button>
+            <div class="output" id="scopeOutput">Click the button to see scope in action...</div>
+        </div>
+
+        <!-- ========== SECTION 2: PARAMETERS DEMONSTRATION ========== -->
+        <div class="section">
+            <h2>2. Function Parameters Demonstration</h2>
+            <div class="section-description">
+                📚 Parameters allow functions to receive input values and use them in calculations.
+                Try entering different numbers to see how parameters work!
+            </div>
+            
+            <div>
+                <input type="number" id="num1" placeholder="Enter number 1" value="5">
+                <input type="number" id="num2" placeholder="Enter number 2" value="10">
+                <button class="btn" onclick="demonstrateParameters()">Calculate with Parameters</button>
+            </div>
+            <div class="output" id="paramOutput">Enter numbers and click to see parameters in action...</div>
+        </div>
+
+        <!-- ========== SECTION 3: RETURN VALUES DEMONSTRATION ========== -->
+        <div class="section">
+            <h2>3. Return Values Demonstration</h2>
+            <div class="section-description">
+                📚 Return values allow functions to send results back to the code that called them.
+                Functions can perform calculations and return the result for further use.
+            </div>
+            
+            <div>
+                <input type="number" id="price" placeholder="Price" value="100">
+                <input type="number" id="discount" placeholder="Discount %" value="20">
+                <button class="btn" onclick="demonstrateReturnValues()">Calculate Final Price</button>
+            </div>
+            <div class="output" id="returnOutput">Enter values to see return values in action...</div>
+            <div class="result-card" id="resultCard">
+                <h3>Calculation Breakdown:</h3>
+                <p id="breakdown"></p>
+            </div>
+        </div>
+
+        <!-- ========== SECTION 4: CSS TRANSITIONS ========== -->
+        <div class="section">
+            <h2>4. CSS Transitions</h2>
+            <div class="section-description">
+                📚 CSS Transitions create smooth changes between property values.
+                Hover over the button below to see smooth color and position changes!
+            </div>
+            
+            <button class="btn" id="hoverBtn">Hover Over Me!</button>
+            <p style="margin-top: 15px; color: #666;">
+                The button uses <code>transition: all 0.3s ease</code> to smoothly change background, transform, and shadow.
+            </p>
+        </div>
+
+        <!-- ========== SECTION 5: KEYFRAME ANIMATIONS ========== -->
+        <div class="section">
+            <h2>5. Keyframe Animations</h2>
+            <div class="section-description">
+                📚 Keyframe animations define complex animations with multiple stages.
+                Click the buttons to trigger different animations!
+            </div>
+            
+            <button class="btn" onclick="triggerSlideAnimation()">Trigger Slide Animation</button>
+            <div class="animated-box" id="slideBox">I slide in!</div>
+            
+            <button class="btn" onclick="triggerRotateAnimation()">Trigger Rotate Animation</button>
+            <div class="circle" id="rotateCircle">Spin</div>
+            
+            <button class="btn" onclick="triggerBounceAnimation()">Trigger Bounce Animation</button>
+            <div class="bounce-box" id="bounceBox"></div>
+        </div>
+
+        <!-- ========== SECTION 6: COMBINING EVERYTHING ========== -->
+        <div class="section">
+            <h2>6. Complete Integration</h2>
+            <div class="section-description">
+                📚 This combines scope, parameters, return values, and animations!
+                Enter your name to see everything work together.
+            </div>
+            
+            <div>
+                <input type="text" id="userName" placeholder="Enter your name" value="Student">
+                <button class="btn" onclick="completeDemo()">Generate Personalized Greeting</button>
+            </div>
+            <div class="output" id="completeOutput">Enter your name to see the complete demonstration...</div>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
